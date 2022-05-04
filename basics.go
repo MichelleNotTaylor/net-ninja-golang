@@ -1,6 +1,48 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
+	// Loops
+	// x := 0
+	// for x < 5 {
+	// 	fmt.Println("The value of x is:", x)
+	// 	x++
+	// }
+	// for i := 0; i < 5; i++ {
+	// 	fmt.Println("Value of i is:", i)
+	// }
+
+	names := []string{"Ilana", "Michelle"}
+
+	for i := 0; i < len(names); i++ {
+		fmt.Println("Value of i is:", i)
+	}
+
+	// The Standard Library
+	// greeting := "Hello friends"
+	// // fmt.Println(strings.Contains(greeting, "Hello"))
+	// // fmt.Println(strings.ReplaceAll(greeting, "Hello", "What's up"))
+
+	// fmt.Println(strings.Index(greeting, "ll"))
+	// // Strings.Split returns a slice
+	// fmt.Println(strings.Split(greeting, " "))
+
+	// fmt.Println("Original string value = ", greeting)
+
+	// ages := []int{27, 2, 30, 4, 11, 56}
+	// sort.Ints(ages)
+	// fmt.Println(ages)
+
+	// index := sort.SearchInts(ages, 30)
+	// fmt.Println(index)
+
+	// names := []string{"Michelle", "Derrick", "Ilana"}
+	// sort.Strings(names)
+	// fmt.Println(names)
+	// fmt.Println(sort.SearchStrings(names, "Derrick"))
 	// String
 	// var nameOne string = "Michelle"
 	// var nameTwo = "Derrick"
@@ -55,4 +97,31 @@ func main() {
 	// var str = fmt.Sprintf("You scored %0.1f points! \n", 225.55)
 	// fmt.Println(str)
 
+	// Arrays and Slices
+	// var ages [3]int = [3]int{20, 25, 27}
+	// var ages = [3]int{20, 25, 27}
+	// names := [4]string{"Yoshi", "Mario", "Peach", "Bowser"}
+	// names[1] = "Luigi"
+
+	// fmt.Println(ages, len(ages))
+	// fmt.Println(names, len(names))
+
+	// // Slices (use arrays under the hood)
+	// var scores = []int{100, 60, 40}
+	// scores[2] = 25
+	// scores = append(scores, 85)
+
+	// fmt.Println(scores, len(scores))
+
+	// Slice Ranges
+	// rangeOne := names[1:3]
+	// rangeTwo := names[2:]
+	// rangeThree := names[:3]
+
+	// fmt.Println(rangeOne)
+	// fmt.Println(rangeTwo)
+	// fmt.Println(rangeThree)
+
+	// rangeOne = append(rangeOne, "Koopa")
+	// fmt.Println(rangeOne)
 }
