@@ -17,10 +17,20 @@ func main() {
 
 	names := []string{"Ilana", "Michelle"}
 
-	for i := 0; i < len(names); i++ {
-		fmt.Println("Value of i is:", i)
+	// for i := 0; i < len(names); i++ {
+	// 	fmt.Println("Value of i is:", i)
+	// }
+
+	// How to cycle through a slice
+	// for index, value := range names {
+	// 	fmt.Printf("The value at index %v is %v\n", index, value)
+	// }
+
+	for _, value := range names {
+		fmt.Printf("The value is %v\n", value)
 	}
 
+	fmt.Println(names)
 	// The Standard Library
 	// greeting := "Hello friends"
 	// // fmt.Println(strings.Contains(greeting, "Hello"))
