@@ -1,10 +1,88 @@
 package main
 
-import (
-	"fmt"
-)
+// func sayGreeting(n string) {
+// 	fmt.Printf("Good morning %v \n", n)
+// }
+
+// func sayFarewell(n string) {
+// 	fmt.Printf("Goodbye %v \n", n)
+// }
+
+// func cycleNames(n []string, f func(string)) {
+// 	for _, v := range n {
+// 		f(v)
+// 	}
+// }
+
+// func circleArea(r float64) float64 {
+// 	return math.Pi * r * r
+// }
+
+// func getInitials(n string) (string, string) {
+// 	s := strings.ToUpper(n)
+// 	names := strings.Split(s, " ")
+
+// 	var initials []string
+// 	for _, v := range names {
+// 		initials = append(initials, v[:1])
+// 	}
+
+// 	if len(initials) > 1 {
+// 		return initials[0], initials[1]
+// 	}
+
+// 	return initials[0], "_"
+// }
 
 func main() {
+	// Multiple Return Values
+	// firstNameOne, secondNameOne := getInitials("Michelle Taylor")
+	// fmt.Println(firstNameOne, secondNameOne)
+
+	// firstNameTwo, secondNameTwo := getInitials("Ilana VanWyk")
+	// fmt.Println(firstNameTwo, secondNameTwo)
+
+	// Functions
+	// sayGreeting("Michelle")
+	// sayFarewell("Michelle")
+	// cycleNames([]string{"Michelle", "Derrick", "Ilana"}, sayGreeting)
+	// cycleNames([]string{"Michelle", "Derrick", "Ilana"}, sayFarewell)
+	// a1 := circleArea(10.5)
+	// a2 := circleArea(15)
+	// fmt.Println(a1, a2)
+	// fmt.Printf("Circle 1 is %0.3f and circle 2 is %0.3f", a1, a2)
+
+	// Booleans and Conditionals
+	// age := 45
+	// fmt.Println("One", age <= 50)
+	// fmt.Println("Two", age >= 50)
+	// fmt.Println("Three", age == 45)
+	// fmt.Println("Four", age != 50)
+
+	// if age < 30 {
+	// 	fmt.Println("Age is less than 30.")
+	// } else if age < 40 {
+	// 	fmt.Println("Age is less than 40.")
+	// } else {
+	// 	fmt.Println("Age is not less than 45")
+	// }
+
+	// names := []string{"Michelle", "Derrick", "Ilana", "Cynthia", "Layla"}
+
+	// // The continue keyword in a for loop breaks out of the current loop iteration and returns into the main/parent loop
+	// // The break keyword breaks out of a loop and doesn't continue cycling through the slice
+	// for index, value := range names {
+	// 	if index == 1 {
+	// 		fmt.Println("Continuing at position", index)
+	// 		continue
+	// 	}
+	// 	if index > 2 {
+	// 		fmt.Println("Breaking at position %v", index)
+	// 		break
+	// 	}
+	// 	fmt.Printf("The value at position %v is %v", index, value)
+	// }
+
 	// Loops
 	// x := 0
 	// for x < 5 {
@@ -15,22 +93,23 @@ func main() {
 	// 	fmt.Println("Value of i is:", i)
 	// }
 
-	names := []string{"Ilana", "Michelle"}
+	// names := []string{"Ilana", "Michelle"}
 
-	// for i := 0; i < len(names); i++ {
-	// 	fmt.Println("Value of i is:", i)
+	// // for i := 0; i < len(names); i++ {
+	// // 	fmt.Println("Value of i is:", i)
+	// // }
+
+	// // How to cycle through a slice
+	// // for index, value := range names {
+	// // 	fmt.Printf("The value at index %v is %v\n", index, value)
+	// // }
+
+	// for _, value := range names {
+	// 	fmt.Printf("The value is %v\n", value)
+	// 	value = "new string"
 	// }
 
-	// How to cycle through a slice
-	// for index, value := range names {
-	// 	fmt.Printf("The value at index %v is %v\n", index, value)
-	// }
-
-	for _, value := range names {
-		fmt.Printf("The value is %v\n", value)
-	}
-
-	fmt.Println(names)
+	// fmt.Println(names)
 	// The Standard Library
 	// greeting := "Hello friends"
 	// // fmt.Println(strings.Contains(greeting, "Hello"))
