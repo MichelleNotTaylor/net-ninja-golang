@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+// var score = 99.5
+
 // func sayGreeting(n string) {
 // 	fmt.Printf("Good morning %v \n", n)
 // }
@@ -34,15 +38,90 @@ package main
 // 	return initials[0], "_"
 // }
 
+func updateName(x *string) {
+	*x = "Taylor"
+}
+
+// func updateMenu(y map[string]float64) {
+// 	y["coffee"] = 2.99
+// }
+
 func main() {
-	// Multiple Return Values
+	// POINTERS
+	name := "Michelle"
+	// updateName(name)
+	fmt.Println("Memory address of name is: ", &name)
+	m := &name
+	fmt.Println("Memory address: ", m)
+	fmt.Println(name)
+	//An asterik with a memory address variable accesses the value of the pointer
+	fmt.Println("Value at memory address:", *m)
+	updateName(m)
+	fmt.Println("Value after updateName:", name)
+
+	// PASS BY VALUE
+	// Go makes copies of values when passed into functions because it is a pass-by-value language
+	// name := "Michelle"
+	// name = updateName(name)
+	// fmt.Println(name)
+
+	// menu := map[string]float64{
+	// 	"pie":       5.95,
+	// 	"ice cream": 3.99,
+	// }
+
+	// updateMenu(menu)
+	// fmt.Println(menu)
+	// fmt.Println(menu["ice cream"])
+
+	// MAPS
+	// menu := map[string]float64{
+	// 	"soup":    4.99,
+	// 	"pie":     7.99,
+	// 	"salad":   6.99,
+	// 	"pudding": 3.55,
+	// }
+
+	// fmt.Println(menu)
+	// fmt.Println(menu["soup"])
+
+	// LOOPING MAPS
+	// for k, v := range menu {
+	// 	fmt.Println(k, "-", v)
+	// }
+
+	// INTS AS KEY TYPE
+	// phonebook := map[int]string{
+	// 	12345567: "Michelle",
+	// 	23455789: "Derrick",
+	// }
+
+	// fmt.Println(phonebook)
+	// fmt.Println(phonebook[23455789])
+
+	// phonebook[23455789] = "Michelle"
+	// fmt.Println(phonebook)
+
+	// phonebook[12345567] = "Derrick"
+	// fmt.Println(phonebook)
+
+	// PACKAGE SCOPE
+	// sayHello("Michelle")
+
+	// for _, v := range points {
+	// 	fmt.Println(v)
+	// }
+
+	// showScore()
+
+	// MULTIPLE RETURN VALUES
 	// firstNameOne, secondNameOne := getInitials("Michelle Taylor")
 	// fmt.Println(firstNameOne, secondNameOne)
 
 	// firstNameTwo, secondNameTwo := getInitials("Ilana VanWyk")
 	// fmt.Println(firstNameTwo, secondNameTwo)
 
-	// Functions
+	// FUNCTIONS
 	// sayGreeting("Michelle")
 	// sayFarewell("Michelle")
 	// cycleNames([]string{"Michelle", "Derrick", "Ilana"}, sayGreeting)
@@ -52,7 +131,7 @@ func main() {
 	// fmt.Println(a1, a2)
 	// fmt.Printf("Circle 1 is %0.3f and circle 2 is %0.3f", a1, a2)
 
-	// Booleans and Conditionals
+	// BOOLEANS AND CONDITIONALS
 	// age := 45
 	// fmt.Println("One", age <= 50)
 	// fmt.Println("Two", age >= 50)
@@ -83,7 +162,7 @@ func main() {
 	// 	fmt.Printf("The value at position %v is %v", index, value)
 	// }
 
-	// Loops
+	// LOOPS
 	// x := 0
 	// for x < 5 {
 	// 	fmt.Println("The value of x is:", x)
@@ -110,7 +189,8 @@ func main() {
 	// }
 
 	// fmt.Println(names)
-	// The Standard Library
+
+	// THE STANDARD LIBRARY
 	// greeting := "Hello friends"
 	// // fmt.Println(strings.Contains(greeting, "Hello"))
 	// // fmt.Println(strings.ReplaceAll(greeting, "Hello", "What's up"))
@@ -143,14 +223,14 @@ func main() {
 	// nameFour := "Layla"
 	// fmt.Println(nameOne, nameTwo, nameThree, nameFour)
 
-	// // Integer
+	// INTEGERS
 	// var ageOne int = 27
 	// var ageTwo = 30
 	// ageThree := 2
 
 	// fmt.Println(ageOne, ageTwo, ageThree)
 
-	// // Bits and Memory
+	// BITS AND MEMORY
 	// var numOne int8 = 25
 	// var numTwo int8 = -128
 	// var numThree uint8 = 25
@@ -202,7 +282,7 @@ func main() {
 
 	// fmt.Println(scores, len(scores))
 
-	// Slice Ranges
+	// SLICE RANGES
 	// rangeOne := names[1:3]
 	// rangeTwo := names[2:]
 	// rangeThree := names[:3]
