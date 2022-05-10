@@ -1,0 +1,5 @@
+Bill breakdown: 
+mutton stew:              ...$5.99 
+pie:                      ...$2.99 
+Tip:                      ...$7
+Total:                    ...$15.98
